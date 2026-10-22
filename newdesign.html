@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        text-align: center;
+        font-size: 30px;
+    }
+    #main{
+        height: 300px;
+        width: 500px;
+        border: 3px solid black;
+        box-shadow: 0 0 10px black;
+        border-radius: 10px;
+        transition: 1s;
+        background-size: cover;
+    }
+    img{
+        height: 150px;
+        width: 200px;
+        border: 2px solid black;
+        border-radius: 5px;
+        box-shadow: 0 0 10px red;
+        margin: 5px;
+        transition: 0.3s;
+        
+    }
+    .gallery img:hover{
+        transform: scale(1.1);
+    }
+
+.a{
+position: absolute;
+top: 100px;
+left: 60px;
+}
+.b{
+position: absolute;
+top: 300px;
+left: 60px;
+}
+.c{
+position: absolute;
+top: 300px;
+left: 1000px;
+}
+.d{
+position: absolute;
+top: 100px;
+left: 1000px;
+}
+.e{
+position: absolute;
+top: 500px;
+left: 1000px;
+}
+.f{
+    position: absolute;top: 500px;left: 60px;
+}
+</style>
+<body>
+
+
+    <h1>New Articles</h1>
+
+    <img src="" id="main" alt="">
+<div class="gallery">
+  
+        <img  class="a"    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyNWQrndrvh65Sk2FEyGE_1bLrMnKPFlxuTfW7_bEBBA&s=10" onclick="changeimg(this)" alt="">
+        <img  class="b"src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPIKGBOp1YcaFSWEwjctVwLuW-uwmPWNtFhWzv_a32cg&s=10" onclick="changeimg(this)" alt="">
+        <img class="c"src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8gR2134kxOyweUMmGKn8OPL5COc9vxDDbVmohh2-ccw&s=10" onclick="changeimg(this)" alt="">
+        <img class="d"src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStkxa3nYk1icZ9QK-Yt4_TmrWQKGcgqtyAzSXUzPDVcw&s=10" onclick="changeimg(this)" alt="">
+        <img class="e"src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1k5FI8NKXkMpXMgRIY0cQfdsrj79xwm7RtNQC_9xF_w&s=10" onclick="changeimg(this)" alt="">
+<img  class="f"   src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAGxDc8X5LHEtSiPevDNDV6Jy9guGAqCAZeCvcPlaF6A&s=10" onclick="changeimg (this)" alt="">
+
+</div>
+    <script>
+        function changeimg(box){
+            var main = document.getElementById("main")
+
+            main.style.opacity="0"
+
+            setTimeout(function(){
+                main.src = box.src
+
+                main.style.opacity="1"
+            },500)
+        }
+    </script>
+    
+
+    <!-- <script>
+        setTimeout(function(){
+            document.write("hello i am ayan")
+        },3000)
+    </script> -->
+
+
+    
+    
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    #red{height: 50px;width: 150px;background-color: red; border: 2px solid white; font-size: 25px; color: white;}
+    #blue{height: 50px;width: 150px;background-color: blue; border: 2px solid white; font-size: 25px; color: white;}
+    #green{height: 50px;width: 150px;background-color: green; border: 2px solid white; font-size: 25px; color: white;}
+    #cyan{height: 50px;width: 150px;background-color: cyan; border: 2px solid white; font-size: 25px; color: white;}
+</style>
+<body>
+
+
+    <div id="box">
+        <button id="red">red</button>
+        <button id="blue">blue</button>
+        <button id="green">green</button>
+        <button id="cyan">cyan</button>
+    </div>
+
+    <script>
+        var btn = document.querySelectorAll("button")
+
+        btn[0].addEventListener("click" , ()=>{
+            document.body.style.backgroundColor= "red"
+            document.body.style.transition="1s"
+        })
+
+           btn[1].addEventListener("click" , ()=>{
+            document.body.style.backgroundColor= "blue"
+            document.body.style.transition="1s"
+        })
+           btn[2].addEventListener("click" , ()=>{
+            document.body.style.backgroundColor= "green"
+            document.body.style.transition="1s"
+        })
+           btn[3].addEventListener("click" , ()=>{
+            document.body.style.backgroundColor= "cyan"
+            document.body.style.transition="1s"
+        })
+
+    </script>
+
+
+    
+</body>
+</html>

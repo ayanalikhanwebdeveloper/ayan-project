@@ -1,0 +1,140 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    
+    #box{
+        height: 140px;
+        width: 140px;
+        background-color: red;
+        border-radius: 100%;
+        position: relative;
+        animation: 2s s infinite alternate linear , 7s a infinite ;
+    }
+    @keyframes a{
+        0%{background-image: url(https://static.vecteezy.com/system/resources/thumbnails/041/880/991/small/ai-generated-pic-artistic-depiction-of-sunflowers-under-a-vast-cloudy-sky-photo.jpg);background-size: 100% 100%;}
+        40%{background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkC1yk4XSN6RyDMG6hOrS4DMjuToJ39deiuwoPi4KhkA&s=10);background-size: 100% 100%;}
+        70%{background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYN_p045oUlnkZmWe4inRRsdVctcxi0x_RaUUUSM0N6w&s=10);background-size: 100% 100%;}
+        100%{background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBB4LQTn0vRq4ydPLp-uTj_lEUHOHYWUU18JlCq5KuMw&s=10);background-size: 100% 100%;}
+    }
+    @keyframes s{
+        0%{left: 0;}
+        100%{left: 80%;}
+    }
+    
+</style>
+<body>
+
+
+<!-- <h1 id="clock1"></h1>
+
+<script>
+    setInterval(function(){
+    var clock = document.getElementById("clock1")
+    var time = new Date()
+    clock.innerHTML = time.toLocaleTimeString()
+    },1000)
+</script>
+
+
+<h1 id="clocks"></h1>
+
+<script>
+    setInterval(function(){
+    var clocks = document.getElementById("clocks")
+    var time = new Date()
+    clocks.innerHTML = time.toLocaleDateString()
+    },1000)
+</script>
+
+ -->
+
+
+<!-- 
+ <div id="box"></div>
+ <br>
+ <button onclick="pause()">pause</button>
+ <button onclick="play()">play</button>
+
+
+ <script>
+    var box = document.getElementById("box")
+
+    function pause(){
+
+        box.style.animationPlayState = "paused"
+    }
+    function play(){
+        box.style.animationPlayState = "running"
+    }
+
+ </script> -->
+<style>
+    body{
+        display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+
+    }
+.main{
+height: 500px;
+width: 500px;
+background-color: black;
+text-align: center;
+border: 2px solid red;
+
+}
+
+input{
+width: 230px;
+height: 30px;
+background-color: aqua;
+margin-top: 10px;
+color: black;
+border: 1px solid red;
+text-align: center;
+}
+button{
+text-align: center;
+
+height: 34px;
+background-color: aqua;border:  1px solid red;
+border-radius: 10px;
+
+
+}
+
+ol{
+color: white;
+text-decoration: underline red;
+
+}
+</style>
+<!-- 
+<div class="main">
+<input type="text" id="task" placeholder="enter your task">
+<button onclick="run()">Add Task</button>
+<ol id="list" type="A"></ol>
+<script>
+    function run(){
+        var task = document.getElementById("task").value
+
+        var li = document.createElement("li")
+
+        li.innerHTML = task
+
+        document.getElementById("list").appendChild(li)
+
+        document.getElementById("task").value = ""
+    }
+</script>
+
+</div> -->
+   
+</body>
+</html>

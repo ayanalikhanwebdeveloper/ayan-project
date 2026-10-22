@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #box{
+        height: 50px;
+        width: 50px;
+        border: 2px solid orangered;
+        box-shadow: 0 0 10px orangered;
+        border-radius: 100%;
+        filter: blur(1px);
+        position: fixed;
+        transition: 0.1s linear;
+        pointer-events: none;
+    }
+    #dot{
+        height: 15px;
+        width: 15px;
+        background-color: orangered;
+        border-radius: 100%;
+        box-shadow: 0 0 5px orangered;
+        position: fixed;
+           pointer-events: none;
+    }
+    *{
+        cursor: none;
+    }
+</style>
+<body>
+
+    <a href="finaltestcc.html">clicl here</a>
+
+    <div id="box"></div>
+
+
+    <div id="dot"></div>
+
+
+<script>
+    var box = document.getElementById("box")
+    var dot = document.getElementById("dot")
+    document.addEventListener("mousemove" , (e)=>{
+        box.style.left = (e.clientX - 25) + "px"
+        box.style.top = (e.clientY - 25) + "px"
+
+          dot.style.left = (e.clientX - 5) + "px"
+        dot.style.top = (e.clientY - 5) + "px"
+    })
+</script>
+
+
+
+
+
+
+
+
+
+
+    
+</body>
+</html>

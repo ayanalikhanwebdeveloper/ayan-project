@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<style>
+marquee{
+font-size: 30px;
+background-color: lightpink;
+color: black;
+}
+.hedding{
+text-align: center;
+font-size: 80px;
+font-family: Brush Script MT;
+}
+input{
+position: absolute;left: 430px;
+width: 500px;
+height: 40px;
+text-align: center;
+font-size: 20px;
+}
+
+nav,ul,li,a{
+display: flex;
+align-items: center;
+justify-content:space-between;
+color: black;text-decoration: underline red;
+padding: 10px;
+font-size: 20px;
+font-family: Algerian;
+}
+ #message {
+      text-align: center;
+      font-size: 22px;
+      color: #ef4444;
+    }
+#container{
+display: flex;
+flex-wrap:wrap ;
+justify-content: center;
+gap: 25px;
+padding: 10px;
+
+}
+ .product {
+      background: black;
+      width: 270px;
+      padding: 20px;
+      border-radius: 15px;
+      text-align: center;
+      box-shadow: 0 5px 15px #0002;
+      transition: 0.3s;
+      height: 350px;
+     box-shadow: 0px 0px 15px red;
+    }
+.product img{
+width: 100%;
+height: 200px;border-radius: 5px;
+
+}
+    .product h3 {
+      color: white;
+    }
+
+    .product p {
+      color: red;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    #message {
+      text-align: center;
+      font-size: 22px;
+      color: #ef4444;
+    }
+button{
+width: 130px;
+height: 30px;
+font-size: 15px;
+background-color: white;
+border: 2px solid red;
+border-radius: 5px;
+}
+.jacket{
+background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtMnpavmRpBwdsLVpXaw2X_uRvzWGq5XgR2oQ-vs6MUC-_-zaKwy38F-i2&s=10);
+height: 430px;
+width: 1330px;
+background-size: 100% 100%;
+border: 3px solid black;
+position: absolute;
+top: 1500px;
+}
+.jacket1{
+border: 2px solid red;
+color:black;
+font-size: 50px;
+position: absolute;top: 1350px;left: 400px;
+padding: 10px;
+box-shadow: 0px 0px 20px pink;
+}
+.jac{
+  margin-top: 700px;
+
+
+
+}
+
+
+
+</style>
+<body>
+<marquee behavior="" direction="left" id="mar" scrollamount="20" >upto 50% off on everything &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; try our new collection  &emsp;&emsp;&emsp;&emsp; Jacket.Caps.Watches</marquee>
+    <h1 class="hedding"> Just <span style="text-decoration: underline red;"> wear </span></h1>
+
+    <input
+      type="text"
+      id="search"
+      placeholder="Search product..."
+      oninput="searchProduct()"
+    >
+
+
+
+
+<nav>
+
+
+    <ul><h1>Just wear</h1></ul>
+<ul>
+
+<li><a href="">Home </a></li>
+<li><a href="">Contact Us</a></li>
+
+
+</ul>
+
+<ul>
+    <li><svg xmlns="http://www.w3.org/2000/svg" widht="30px" height="30px" viewBox="0 0 20 20" fill="currentColor" class="size-5">
+  <path fill-rule="evenodd" d="M6 5v1H4.667a1.75 1.75 0 0 0-1.743 1.598l-.826 9.5A1.75 1.75 0 0 0 3.84 19H16.16a1.75 1.75 0 0 0 1.743-1.902l-.826-9.5A1.75 1.75 0 0 0 15.333 6H14V5a4 4 0 0 0-8 0Zm4-2.5A2.5 2.5 0 0 0 7.5 5v1h5V5A2.5 2.5 0 0 0 10 2.5ZM7.5 10a2.5 2.5 0 0 0 5 0V8.75a.75.75 0 0 1 1.5 0V10a4 4 0 0 1-8 0V8.75a.75.75 0 0 1 1.5 0V10Z" clip-rule="evenodd" />
+</svg></li>
+    <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" height="30px" wight="30px" fill="currentColor" class="size-5">
+  <path d="M1 1.75A.75.75 0 0 1 1.75 1h1.628a1.75 1.75 0 0 1 1.734 1.51L5.18 3a65.25 65.25 0 0 1 13.36 1.412.75.75 0 0 1 .58.875 48.645 48.645 0 0 1-1.618 6.2.75.75 0 0 1-.712.513H6a2.503 2.503 0 0 0-2.292 1.5H17.25a.75.75 0 0 1 0 1.5H2.76a.75.75 0 0 1-.748-.807 4.002 4.002 0 0 1 2.716-3.486L3.626 2.716a.25.25 0 0 0-.248-.216H1.75A.75.75 0 0 1 1 1.75ZM6 17.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0ZM15.5 19a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z" />
+</svg></li>
+</ul>
+</nav>
+
+<div id="container">
+<div class="product">
+<img src="https://www.pepejeans.in/on/demandware.static/-/Sites-masterCatalog_Pepe/default/dwa82bf83f/fashionaccesories/8905875577379-18.jpg" alt="">
+<h3>men green base ball cap</h3>
+<p>RS .1500</p>
+<button>Add to cart</button>
+
+</div>
+<div class="product">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbuNVpJZY1xQecjkPZoJ3LZvz6Kr53o1kwcz8i3Edq7w&s=10" alt="">
+<h3>truker cap</h3>
+<p>RS .1900</p>
+<button>Add to cart</button>
+
+</div>
+<div class="product">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTSiKqbKGoq-ahkVBYImzl0Vu-YxqpdxGwDNaIenfL1kGT4TcdDvK0Ckc&s=10" alt="">
+<h3>custom cap </h3>
+<p>RS .1000</p>
+<button>Add to cart</button>
+
+</div>
+<div class="product">
+<img src="https://ccstore.pk/cdn/shop/files/B91AC66C-EBDA-4A79-9550-B94A1217AE4A_219x.progressive.jpg?v=1695562076" alt="">
+<h3>base ball cotton cap</h3>
+<p>RS .2200</p>
+<button>Add to cart</button>
+
+</div>
+<div class="product">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUZDGBd_MpihO5wtycqswapJUZ3yG-1M_eMZvFbfW_hg&s=10" alt="">
+<h3>micro fabric cap</h3>
+<p>RS .2500</p>
+<button>Add to cart</button>
+
+</div>
+<div class="product">
+<img src="https://customfreaks.store/wp-content/uploads/2022/02/PCAPS00017.jpg" alt="">
+<h3>polo cap</h3>
+<p>RS .2900</p>
+<button>Add to cart</button>
+
+</div>
+
+<div class="product">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQylIPYW_R5U1zGCXWZx2ZF0KMia2Tdf5Po0bcxiRSDsw&s=10" alt="">
+<h3>markhor cap</h3>
+<p>RS .700</p>
+<button>Add to cart</button>
+
+</div>
+<div class="product">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpXG7hmmnVb-TvcBGqb3Pq5Os0txYg3BwY42XpACJ1cgtIElZfWHd_x20&s=10" alt="">
+<h3>ryder cap</h3>
+<p>RS .3000</p>
+<button>Add to cart</button>
+
+</div>
+</div>
+<div class="jacket"></div>
+<div class="jacket1">Simple And Authentic Jackets</div>
+
+
+<div id="container" class="jac">
+<div class="product">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcQlkAdXFHP7CAvDXYgeKuu0gKJy6ATEJq5rDJBVcLw_JhjDvjadGJrLYu&s=10" alt="">
+<h3>lether jacket</h3>
+<p>RS .5000</p>
+<button>Add to cart</button>
+
+</div>
+<div class="product">
+<img src="https://expostore.pk/cdn/shop/files/MenBrandedZipper-Camel_1.webp?v=1789799139" alt="">
+<h3>zipper jacket</h3>
+<p>RS .2000</p>
+<button>Add to cart</button>
+
+</div>
+<div class="product">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTSiKqbKGoq-ahkVBYImzl0Vu-YxqpdxGwDNaIenfL1kGT4TcdDvK0Ckc&s=10" alt="">
+<h3>custom cap </h3>
+<p>RS .1000</p>
+<button>Add to cart</button>
+
+</div>
+<div class="product">
+<img src="https://ccstore.pk/cdn/shop/files/B91AC66C-EBDA-4A79-9550-B94A1217AE4A_219x.progressive.jpg?v=1695562076" alt="">
+<h3>base ball cotton cap</h3>
+<p>RS .2200</p>
+<button>Add to cart</button>
+
+</div>
+<div class="product">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUZDGBd_MpihO5wtycqswapJUZ3yG-1M_eMZvFbfW_hg&s=10" alt="">
+<h3>micro fabric cap</h3>
+<p>RS .2500</p>
+<button>Add to cart</button>
+
+</div>
+<div class="product">
+<img src="https://customfreaks.store/wp-content/uploads/2022/02/PCAPS00017.jpg" alt="">
+<h3>polo cap</h3>
+<p>RS .2900</p>
+<button>Add to cart</button>
+
+</div>
+
+<div class="product">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQylIPYW_R5U1zGCXWZx2ZF0KMia2Tdf5Po0bcxiRSDsw&s=10" alt="">
+<h3>markhor cap</h3>
+<p>RS .700</p>
+<button>Add to cart</button>
+
+</div>
+<div class="product">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpXG7hmmnVb-TvcBGqb3Pq5Os0txYg3BwY42XpACJ1cgtIElZfWHd_x20&s=10" alt="">
+<h3>ryder cap</h3>
+<p>RS .3000</p>
+<button>Add to cart</button>
+
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <p id="message"></p>
+
+  <script>
+    function searchProduct() {
+
+      var input = document.getElementById("search").value.toLowerCase();
+
+      var products = document.querySelectorAll(".product");
+
+      var count = 0;
+
+      products.forEach(function(box) {
+
+        var name = box.querySelector("h3").innerText.toLowerCase();
+
+        if (name.includes(input)) {
+          box.style.display = "block";
+          count++;
+        }
+        else {
+          box.style.display = "none";
+        }
+
+      });
+
+      var message = document.getElementById("message");
+
+      if (count == 0) {
+        message.innerText = "this product is  not available ";
+      }
+      else {
+        message.innerText = "";
+      }
+
+    }
+
+var mq = document.getElementById("mar")
+
+mq.addEventListener("mouseover" , function(){
+  mq.stop()
+})
+mq.addEventListener("mouseout" , function(){
+  mq.start()
+})
+
+
+  </script>
+
+
+
+
+</body>
+</html>
